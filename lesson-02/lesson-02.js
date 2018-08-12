@@ -18,13 +18,17 @@ for (let i = 0; i < 5; i++) {
 	} else {
 		i = i - 1;
 	}
-	  if (time < 0) {
+	    if (time < 0) {
+	    	console.log('Такого не может быть');
 
-	  } else if (time > 8 && time < 20) {
+		} else if (time > 8 && time < 20) {
+			console.log('Время работать');
 
-	  } else if (time < 24) {
+	    } else if (time < 24) {
+	    	console.log('Уже слишком поздно');
 
-	  } else {
+		} else {
+			console.log('В сутках только 24 часа');
 	}
 }
 

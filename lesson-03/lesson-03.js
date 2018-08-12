@@ -15,12 +15,12 @@ function start() {
 }
 start();
 
-let mainList = {
+let  mainList = {
 	 budget: budget,
 	 shopName: shop,
 	 shopGoods: [],
      employesrs: {},
-	 open: false
+	 open: false,
 	 discont: false
 }
 function chooseGoods() {
@@ -41,22 +41,23 @@ chooseGoods();
 function workTime(time) {
 
 	    if (time < 0) {
+	    	console.log('Такого не может быть');
 
 		} else if (time > 8 && time < 20) {
+			console.log('Время работать');
 
 	    } else if (time < 24) {
+	    	console.log('Уже слишком поздно');
 
 		} else {
+			console.log('В сутках только 24 часа');
 	}
 }
 workTime(18);
 
 function budgetСalculation() {
-  
+  let сalculation = budget / 30;
+      alert (сalculation);
 }
-function discountSystem() {
+budgetСalculation();
 
-}
-function hiringEmployers() {
-
-}
