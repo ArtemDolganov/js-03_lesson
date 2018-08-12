@@ -15,13 +15,14 @@ function start() {
 }
 start();
 
-let  mainList = {
-	 budget: budget,
-	 shopName: shop,
-	 shopGoods: [],
-     employesrs: {},
-	 open: false,
-	 discont: false
+let mainList = {
+    budget: budget,
+    shopName: shop,
+    shopGoods: [],
+    employesrs: {},
+    open: false,
+    discont: true
+
 }
 function chooseGoods() {
     for (let i = 0; i < 5; i++) {
@@ -31,7 +32,7 @@ function chooseGoods() {
 			 mainList.shopGoods[i] = a;
 		
 		} else {
-			  i = i - 1;
+			  a = i - 1;
 		}
 
 	}	 
@@ -61,3 +62,25 @@ function budgetСalculation() {
 }
 budgetСalculation();
 
+function discountSystem() {
+	 if (mainList.discount == true) {
+            price = '80%';
+            console.log(price);
+        } else {
+            price = '100%';
+            console.log(price);
+        }
+}
+function eployers() {
+   for (let i = 0; i < 5; i++) {
+	   let a = prompt('Имя сотрудника');
+
+	   if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length <50) {
+			 mainList.employesrs[i] = a;
+		
+		} else { 
+			  i--;
+	}
+
+  }
+}
