@@ -34,7 +34,7 @@ for (let i = 0; i < 5; i++) {
 
  /* Закоментировал два цикла while, do while
 let i = 0;
-while (i > 5) {
+while (i < 5) {
 	let a = prompt('Какой тип товаров мы будем продавать');
 
 	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.lenght < 50) {
@@ -52,5 +52,5 @@ do {
 		i++;
        }
 }  
-while ( i > 5) 
+while ( i < 5) 
 */
