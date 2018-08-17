@@ -4,25 +4,24 @@ let menu = document.querySelector('.menu'),
     adv = document.querySelector('.adv'),
     body = document.getElementsByTagName('body')[0],
     menuItem = document.getElementsByClassName('menu-item'),
-    question = prompt('Как Вы относитесь к технике Apple');
-    prompt = document.getElementById('prompt')
-
-
+    question = document.getElementById('prompt')
+    
     menu.insertBefore(menuItem[1], menuItem[3]);
     title.textContent = 'Мы продаем только подлинную технику Apple';
     column[1].removeChild(adv);
     body.style.backgroundImage = 'url(img/apple_true.jpg)';
-    prompt.textContent = 'Тут мой ответ';
+   // question = prompt('Как Вы относитесь к технике Apple');
+    //question.textContent = prompt('Как Вы относитесь к технике Apple','');
       console.log(title);
       console.log(menu);
       console.log(menuItem);
       console.log(adv);
-
+      console.log(prompt);
     div = document.createElement('div');
     div.classList.add('menu-item');
     menu.appendChild(div);
     div.innerHTML = 'Пятый пункт';
-
+    question.textContent = prompt('Как Вы относитесь к технике Apple','');
     
 
 
