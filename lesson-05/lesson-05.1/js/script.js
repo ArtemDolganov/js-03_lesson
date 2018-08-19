@@ -10,9 +10,7 @@ let menu = document.querySelector('.menu'),
     title.textContent = 'Мы продаем только подлинную технику Apple';
     column[1].removeChild(adv);
     body.style.backgroundImage = 'url(img/apple_true.jpg)';
-   // question = prompt('Как Вы относитесь к технике Apple');
-    //question.textContent = prompt('Как Вы относитесь к технике Apple','');
-      console.log(title);
+  
       console.log(menu);
       console.log(menuItem);
       console.log(adv);

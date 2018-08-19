@@ -46,4 +46,3 @@ let openBtn = document.getElementById('open-btn'),
 	console.log(input1);
 	console.log(input2);
 	console.log(input3);
-	
