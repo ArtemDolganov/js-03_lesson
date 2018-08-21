@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+    <script type="text/javascript">
+    	
+	function Timer() {
+    let time = new Date(); 
+    let hour = time.getHours(); 
+    let minute = time.getMinutes(); 
+    let second = time.getSeconds(); 
+    
+    if (hour < 10) hour = "0" + hour;
+    if (minute < 10) minute  = "0" + minute;
+    if (second < 10) second  = "0" + second;
+    document.getElementById("time").textContent = hour + ":" + minute + ":" + second; 
+  }
+    setInterval(Timer, 1000);   
+
+    </script>
+  <p style="font-weight:normal;">"Время"</p>
+  <span id="time"></span>
+</body>
+</html>
