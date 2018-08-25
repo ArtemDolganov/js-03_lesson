@@ -3,10 +3,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	let tab = document.getElementsByClassName('info-header-tab'),
 		tabContent = document.getElementsByClassName('info-tabcontent'),
 		info = document.getElementsByClassName('info-header')[0];
-		
-		console.log(tab);
-		console.log(tabContent);
-		console.log(info);
+	   
 		
      
   
@@ -38,10 +35,13 @@ window.addEventListener('DOMContentLoaded', function() {
 			}
     	};
  	});
+
+   
+
     
     // Timer
 
-    	let deadline = '2018-08-23';
+    	let deadline = '2018-08-26';
 
     	function getTimeRemaining(endtime) {
 		 let t = Date.parse(endtime) - Date.parse(new Date()),
@@ -102,6 +102,18 @@ window.addEventListener('DOMContentLoaded', function() {
 	let more = document.querySelector('.more'),
 		overlay = document.querySelector('.overlay'),
 		close = document.querySelector('.popup-close');
+	    infoTab = document.querySelector('.info');  // Вызываем родителя info
+
+	    infoTab.addEventListener('click', function(event) {    // Вешаем событие клик
+    	let target = event.target;
+
+    	if(target.className == 'description-btn') {   
+    		this.classList.add('more-splash');
+			overlay.style.display = "block";
+			document.body.style.overflow = 'hidden';
+			}
+    	//  делегирование обработкчика кнопки 'description-btn' со всеми табами.
+ 	});
 
 		more.addEventListener('click', function() {
 			this.classList.add('more-splash');
@@ -113,14 +125,11 @@ window.addEventListener('DOMContentLoaded', function() {
 			overlay.style.display = "none";
 			more.classList.remove('more-splash');
 			document.body.style.overflow = '';
-
 		});
-
-});
-
+    });
 
 
-
+     
 
 
 
@@ -129,13 +138,3 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-
-
-
-
-		
