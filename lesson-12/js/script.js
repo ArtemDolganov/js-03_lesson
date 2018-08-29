@@ -334,9 +334,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     } else{
                     	persons.value = '';
                     }
-
 					personsSum = +this.value;
-			    	
 			    	
 			    	//пишем условие и проверяем на сколько дней едет человек
 			    	if (restDays.value == ''){
@@ -365,8 +363,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     } else{
                     	restDays.value = '';
                     }
-
-			    	daysSum = +this.value;
+					daysSum = +this.value;
 			    	//пишем условие где проверяем сколько человек едет
 			    	if (persons.value == ''){	
 			    		totalValue.innerHTML = 0;
@@ -380,7 +377,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			            totalValue.innerHTML = 0;
 			            total = 0;
 			        }
-			        if (retsDay > 0 && retsDays != 0){
+			        if (restDay > 0 && restDays != 0){
 			        	total = (daysSum + personsSum)*4000;
 			        }else{
 			        	total = 0;
@@ -402,31 +399,3 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-// if (resDays.value == '' || persons.value == '') {
-// 			            totalValue.innerHTML = 0;
-// 			            total = 0;
-// 			     	} else if (resDays.value == 0 || persons.value == 0) {
-// 			            totalValue.innerHTML = 0;
-// 			            total = 0;
-// 			        }
-
-
-// if (resDays.value == '' || persons.value == '') {
-// 			            totalValue.innerHTML = 0;
-// 			            total = 0;
-// 			     	} else if (resDays.value == 0 || persons.value == 0) {
-// 			            totalValue.innerHTML = 0;
-// 			            total = 0;
-// 			        }
-
-// .replace(\[^\d]*/g)
-// .replace(/^[^]*(\d+([.,])d{0,5})?).*$/g, '$');
- // let rep = /[-\.;":'/a-zA-Zа-яА-Я ]/;
-
-
-// target.match(/^[-.;":'/a-zA-Zа-яА-Я ]/g);
