@@ -377,25 +377,22 @@ window.addEventListener('DOMContentLoaded', function() {
 			            totalValue.innerHTML = 0;
 			            total = 0;
 			        }
-			        if (restDays > 0 && restDays != 0){
+			        if (daySum > 0 && daySum != 0){
 			        	total = (daysSum + personsSum)*4000;
 			        }else{
 			        	total = 0;
 			        }
 				})
 				//Рассчет суммы при выборе направления путешествия
-			    place.addEventListener('input', function(){
-			    	if (restDays.value == '' || persons.value == '') {
-			    		totalValue.innerHTML = 0;
-			    } else{
-			    	total = total * this.options[this.selectedIndex].value;
-			    	totalValue.innerHTML = total;
-			    }
-
+			   place.addEventListener('input', function(){
+			  if (persons.value == '' ||  restDays.value == '') {
+			            totalValue.innerHTML = 0;
+			            total = 0;
+			    }else {
+				    let result = total; 
+	                totalValue.innerHTML = result * this.options[this.selectedIndex].value;
+			  }  
 			});
-    });
-
-
-
+	});
 
 
