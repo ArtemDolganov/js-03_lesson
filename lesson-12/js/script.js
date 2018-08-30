@@ -377,7 +377,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			            totalValue.innerHTML = 0;
 			            total = 0;
 			        }
-			        if (daySum > 0 && daySum != 0){
+			        if (daysSum > 0 && daysSum != 0){
 			        	total = (daysSum + personsSum)*4000;
 			        }else{
 			        	total = 0;
