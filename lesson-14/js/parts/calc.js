@@ -6,7 +6,7 @@ function calc() {
   var persons = document.getElementsByClassName('counter-block-input')[0],
       restDays = document.getElementsByClassName('counter-block-input')[1],
       place = document.getElementById('select'),
-      totalValue = document.getElementById('total')
+      totalValue = document.getElementById('total'),
  
  var personsSum = 0, 
      daysSum = 0, 

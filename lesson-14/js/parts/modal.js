@@ -5,6 +5,7 @@ function modal() {
       overlay = document.querySelector('.overlay'),
       close = document.querySelector('.popup-close'),
   infoTab = document.querySelector('.info');
+  
   infoTab.addEventListener('click', function (event) {
     var target = event.target;
 
