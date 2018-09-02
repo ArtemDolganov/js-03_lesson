@@ -24,7 +24,7 @@ newArr[i]=Math.sqrt(a[i]);
 }
 return newArr;
 }
-console.log(each(arr, myFunc));
+console.log(each(arr1, myFunc));
 
 let assert = require('chai').assert;
 
@@ -42,15 +42,15 @@ describe('num', function() {
 
 describe('each', function(){
 	it('Возвращаемое значение соответствует типу данных', function(){
-		assert.typeOf(arr, 'Array');
+		assert.typeOf(arr1, 'Array');
 	});
 	it('Проверка типа данных', function(){
-		assert.lengthOf(arr, 5);
+		assert.lengthOf(arr1, 5);
 	});
 	it('Получение результата', function(){
 	 function testing() {
-            for (let i = 0; i <= arr.length; i++) {
-                assert.equal(arr[i] === Math.sqrt(arr[i]));
+            for (let i = 0; i <= arr1.length; i++) {
+                assert.equal(arr1[i] === Math.sqrt(arr1[i]));
               }
         }
     });
