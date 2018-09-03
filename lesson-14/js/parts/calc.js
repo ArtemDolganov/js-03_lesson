@@ -1,6 +1,6 @@
-"use strict";
+//"use strict";
 
-require("core-js/modules/es6.regexp.match");
+//require("core-js/modules/es6.regexp.match");
 
 function calc() {
   var persons = document.getElementsByClassName('counter-block-input')[0],

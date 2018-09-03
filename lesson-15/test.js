@@ -25,8 +25,8 @@ newArr[i]=Math.sqrt(a[i]);
 return newArr;
 }
 console.log(each(arr1, myFunc));
-
 let assert = require('chai').assert;
+
 
 describe('sum', function() {
 	it('Возвращаем тип данных', function() {
