@@ -86,7 +86,7 @@ function  ajax () {
 		let contForm = document.getElementById('form'),
 		    inputCont = contForm.getElementsByTagName('input');
 		
-		contForm.addEventListener('submit', function(event) {
+		contForm.addEventListener('submit', (event) => {
 			
 			event.preventDefault();
 			
@@ -142,7 +142,7 @@ function calc () {
 			    totalValue.innerHTML = 0;
 			   
 			    let rep = /\d/ig;
-			   persons.addEventListener('input', function(e){
+			   persons.addEventListener('input', (e) =>{
                   let target = e.target.value;
                     if (target.match(rep) && target != '') {
                     	console.log(target);
@@ -170,7 +170,7 @@ function calc () {
 			        }
  			    });
 			    
-			    restDays.addEventListener('input', function(e){
+			    restDays.addEventListener('input', (e) => {
 					let target = e.target.value;
                     if (target.match(rep) && target != '') {
                     	console.log(target);
@@ -198,7 +198,7 @@ function calc () {
 			        }
 				});
 				
-			   place.addEventListener('input', function(){
+			   place.addEventListener('input', () =>{
 			  if (persons.value == '' ||  restDays.value == '') {
 			            totalValue.innerHTML = 0;
 			            total = 0;
@@ -218,7 +218,7 @@ function modal (){
 		close = document.querySelector('.popup-close');
 	    infoTab = document.querySelector('.info'); 
 
-	    infoTab.addEventListener('click', function(event) {   
+	    infoTab.addEventListener('click', (event) => {   
     	let target = event.target;
 
     	if(target.className == 'description-btn') {   
@@ -229,13 +229,13 @@ function modal (){
     	
  	});
 
-		more.addEventListener('click', function() {
+		more.addEventListener('click', () => {
 			this.classList.add('more-splash');
 			overlay.style.display = "block";
 			document.body.style.overflow = 'hidden';
 		});
 
-		close.addEventListener('click', function() {
+		close.addEventListener('click', () => {
 			overlay.style.display = "none";
 			more.classList.remove('more-splash');
 			document.body.style.overflow = '';
@@ -294,15 +294,15 @@ function slider () {
 				showSlides(slideIndex = n);
 			}
 			
-			prev.addEventListener('click', function() {
+			prev.addEventListener('click', () => {
 				plusSlides(-1);
 			});
 
-			next.addEventListener('click', function() {
+			next.addEventListener('click', () => {
 				plusSlides(1);
 			});
 			
-			dotsWrap.addEventListener('click', function(event){
+			dotsWrap.addEventListener('click', (event) => {
 				
 				for (let i = 0; i < dots.length + 1; i++) {
 					if (event.target.classList.contains('dot') && event.target == dots[i-1]) {
@@ -336,7 +336,7 @@ function tab (){
 			tabContent[b].classList.add('show');
 		}
 	}
-    info.addEventListener('click', function(event) {
+    info.addEventListener('click', (event) => {
     	let target = event.target;
     	if(target.className == 'info-header-tab') {
     		for (let i = 0; i < tab.length; i++) {
