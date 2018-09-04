@@ -75,11 +75,12 @@ function calc() {
       total = 0;
     }
   });
-  place.addEventListener('input', function () {
+
+  place.addEventListener('change', function() {
     if (persons.value == '' || restDays.value == '') {
       totalValue.innerHTML = 0;
       total = 0;
-    } else {
+    }else {
       var result = total;
       totalValue.innerHTML = result * this.options[this.selectedIndex].value;
     }
