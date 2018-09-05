@@ -44,7 +44,7 @@ function  ajax () {
 		statusMessage.classList.add('status');
 
 		
-		form.addEventListener('submit', function(event) {
+		form.addEventListener('submit', (event) => {
 			
 			event.preventDefault();
 			

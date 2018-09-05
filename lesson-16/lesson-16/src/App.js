@@ -5,11 +5,11 @@ import './App.css';
 function ShowBanner(props) {
   if (props.time > 45) {
     return (
-      <div clasName="rest_block"> Отдых </div>
+      <div className="rest_block"> Отдых </div>
       )
   }else {
     return (
-      <div clasName="work_block"> Время работать над собой! </div>
+        <div className="work_block"> Время работать над собой! </div>
       )
   }
 }
